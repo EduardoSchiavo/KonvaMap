@@ -1,4 +1,5 @@
-import { Stage, Layer, Rect, Circle } from 'react-konva';
+import { Stage, Layer, Circle } from 'react-konva';
+import Devices from './Devices';
 
 export const App = () => {
   return (
@@ -7,8 +8,7 @@ export const App = () => {
     // Rect and Circle are not DOM elements. They are 2d shapes on canvas
     <Stage width={window.innerWidth} height={window.innerHeight}>
       <Layer>
-        <Rect width={50} height={50} fill="red" />
-        <Circle x={200} y={200} stroke="black" radius={50} />
+        <Devices />
       </Layer>
     </Stage>
   );
